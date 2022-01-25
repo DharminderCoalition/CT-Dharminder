@@ -31,29 +31,28 @@ header p{
     font-size: 18px;
     margin-bottom: 20px;
 }
-ul li{
+ul li {
     list-style: none;
-    border: 1px solid #2966af;
     display: inline-block;
     width: 30%;
-    text-align: center;
     margin: 22px 15px;
-    padding: 23px;
-    font-size: 15px;
-    border-radius: 10px;
-    transition: all .3s ease-in;
 }
-ul li a{
+ul li a{ 
     text-decoration: none;
     color: #2966af;
     width: 100%;
     text-transform: capitalize;
+    padding: 23px;
+    list-style: none;
+    border: 1px solid #2966af;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: all .3s ease-in;
 }
-ul li:hover{
+ul li a:hover{
     background-color: #2966af;
     color: #fff;
     border-radius: 0;
-}
-ul li:hover a{
-    color: #fff;
 }
