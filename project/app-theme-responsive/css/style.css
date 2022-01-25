@@ -1,0 +1,129 @@
+body {
+    font-family: 'Open-sans';
+    font-size: 17px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+.active {
+    color: #567a9a;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.primary-text {
+    color: #567a9a;
+}
+
+.primary-background {
+    background: #567a9a;
+}
+
+#main-header {
+    border-bottom: 1px solid #567a9a;
+}
+
+#navbar {
+    text-transform: uppercase;
+}
+
+#navbar li {
+    padding-right: 20px;
+    display: inline-block;
+    font-size: 1em
+}
+
+#navbar a:hover {
+    color: #567a9a;
+    border-bottom: 3px solid #567a9a;
+}
+
+#showcase {
+    background: url('../img/showcase.jpg')no-repeat center center/cover;
+    height: fit-content;
+    padding: 10rem 2rem;
+    margin-bottom: 2rem;
+}
+
+#showcase .section-content {
+    background: rgba(0, 0, 0, 0.800);
+    opacity: 100%;
+    color: #fff;
+    border-radius: 90px;
+    width: 60%;
+}
+
+#showcase h1 {
+    font-size: 4vw;
+    width: 100%;
+}
+
+#showcase p {
+    font-size: 2vw;
+    width: 100%;
+}
+
+#features i {
+    color: #567a9a;
+    font-size: 3rem;
+}
+
+#info {
+    background: url('../img/bubbles.jpg') no-repeat center center/cover;
+    height: fit-content;
+    padding: 1rem 0;
+    color: #ccc;
+}
+
+#company {
+    background: #333;
+    color: #ccc;
+}
+
+#company .row {
+    padding: 1rem 3rem;
+}
+
+#company ul {
+    padding: 0;
+}
+
+#company input {
+    padding: .2rem;
+    outline: none;
+    border-radius: 90px;
+    border: none;
+    height: 1.3rem;
+}
+
+#company button {
+    background: #222;
+    border: none;
+    color: #ccc;
+    height: 1.7rem;
+    padding: 0rem 1.1rem;
+    transform: translate(-17px, 0px);
+    border-radius: 0px 90px 90px 0;
+}
+
+#main-footer {
+    background: #567a9a;
+    text-align: center;
+}

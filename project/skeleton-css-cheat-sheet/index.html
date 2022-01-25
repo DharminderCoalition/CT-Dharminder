@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- requierd meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="">
+    <!-- skeleton cdn file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title> SkeletonCSS Crash Course</title>
+    <!-- custom css -->
+    <style>
+        .columns,
+        .column {
+            background: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Headings -->
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <h4>Heading Four</h4>
+        <h5>Heading five</h5>
+        <h6>Heading six</h6>
+        <hr>
+        <!-- Floating -->
+        <h2 class="u-pull-left">Left</h2>
+        <h2 class="u-pull-right">Right</h2>
+        <br>
+        <hr>
+        <!-- Buttons -->
+        <button>Button</button>
+        <input type="submit" value="Submit">
+        <input type="button" value="Submit">
+        <a href="#" class="button">Link</a>
+        <br>
+        <!-- Primary button -->
+        <button class="button-primary">Button</button>
+        <input type="submit" value="Submit" class="button-primary">
+        <input type="button" value="Submit" class="button-primary">
+        <a href="#" class="button button-primary">Link</a>
+        <br>
+        <!-- full width for any element -->
+        <button class="u-full-width">Full Width Button</button>
+        <hr>
+        <!-- List -->
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Service</li>
+            <ul>
+                <li>Web designing</li>
+                <li>Programming</li>
+            </ul>
+            <li>About us</li>
+        </ul>
+        <hr>
+        <!-- Code Blog -->
+        <pre>
+            <code>
+            body{
+                color:#fff;
+             background:#000;
+            }
+             </code>
+        </pre>
+        <!-- Tables -->
+        <table class="u-full-width">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>johndoe@gmail.com</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Stive</td>
+                <td>Stive34@gmail.com</td>
+                <td>Los Santos</td>
+            </tr>
+        </table>
+        <!-- Form -->
+        <form>
+            <div>
+                <label>Name</label>
+                <input class="u-full-width" type="text">
+            </div>
+            <div>
+                <label>Membership</label>
+                <select class="u-full-width">
+                    <option value="1">Membership1</option>
+                    <option value="2">Membership2</option>
+                    <option value="3">Membership3</option>
+                </select>
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea class="u-full-width" name="Message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label class="">
+                    <input class="label-body" type="checkbox"><span>Suscribe to Email</span>
+                </label>
+            </div>
+            <input class="button-primary" type="submit">
+        </form>
+        <hr>
+        <!-- Grid -->
+        <div class="row">
+            <div class="eight columns">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+            <div class="four columns">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="six columns">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+            <div class="six columns">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+            <div class="one-third column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="one-half column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+            <div class="one-half column">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam sequi esse consectetur, totam rerum est repudiandae. Iure explicabo provident ex soluta modi sit nostrum est, officia rerum omnis, culpa veniam amet vero earum. Esse soluta in voluptatem
+                quasi fugit.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

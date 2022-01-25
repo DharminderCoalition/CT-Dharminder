@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+
+/* backgroung image with blur effect */
+
+.show-case::after {
+    content: "";
+    width: 100%;
+    background: url("../img/showcase.jpg")no-repeat center center/cover;
+    display: block;
+    filter: blur(10px);
+    transition: all 1000ms;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.show-case:hover::after {
+    filter: blur(0px);
+}
+
+.show-case:hover .logo>img {
+    filter: blur(2px);
+}
+
+
+/* logo and text */
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.logo img {
+    width: 180px;
+    height: 180px;
+}
+
+.logo .title {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+}
+
+.logo .text {
+    line-height: 1.7;
+    margin-top: 1rem;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* .cards */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* about us section */
+
+.white {
+    background: #fff;
+    color: #000;
+    padding: 80px;
+}
+
+.about .image {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.about .about-us {
+    text-align: start;
+    padding: 10px;
+}
+
+.about .about-us p {
+    font-size: 1.3rem;
+}
+
+
+/* footer */
+
+footer div {
+    text-align: center;
+    margin: 0;
+    padding: 50px 0;
+    background: #141414;
+    font-size: 1.4rem;
+}
+
+
+/* media query */
+
+@media (min-width:786px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding: 40px 10px;
+        margin-bottom: 10px;
+    }
+    .about {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

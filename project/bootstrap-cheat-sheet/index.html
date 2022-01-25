@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discription" content="cheat-sheet, bootstrap">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Bootstrap cheat sheet</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">&ThickSpace; Navbar</a>
+            <button class="navbar-toggler me-3" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- JUMBOTRON -->
+    <div class="container">
+        <h3>JUMBOTRON</h3>
+        <div class="p-5 bg-light">
+            <div class="container">
+                <h1 class="display-3 text-center">MY WebSite</h1>
+                <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel ducimus tempore aliquam provident cum.</p>
+                <p class="text-center">More info</p>
+                <p class="lead text-center">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Jumbo action name</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TYPHOGRAPHY -->
+    <div class="container">
+        <h3>TYPHOGRAPHY</h3>
+        <h1>Hello, world! <small class="text-muted">secondary text</small></h1>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, consectetur, rem inventore ab, reiciendis repellendus asperiores </p>
+        <p>officia distinctio eos commodi voluptatibus doloribus quae dolore impedit accusantium sed nemo ad modi.</p>
+        <p><mark>Lorem ipsum</mark> dolor sit amet consectetur adipisicing elit. <del>Quibusdam </del>odio vero iusto fuga dignissimos! Error ut minus consequuntur maxime obcaecati molestiae totam, natus distinctio adipisci <u>ipsam ipsa.</u> Quaerat, ad
+            magni.
+        </p>
+        <hr>
+        <!-- ALIGIMENT & TRANSFORMATION-->
+        <h3>ALIGIMENT & TRANSFORMATION</h3>
+        <P class="text-left text-lowercase">Text aligned left</P>
+        <P class="text-center text-uppercase">Text aligned center</P>
+        <P class="text-end text-capitalize">Text aligned right</P>
+        <P class="text-justify">Text justified</P>
+        <P class="text-nowrap">Text no-wrap</P>
+        <hr>
+        <!-- QUICK FLOAT -->
+        <h3>QUICK FLOAT</h3>
+        <div class="float-end">Div float right</div>
+        <div class="float-start">Div float left</div>
+        <div class="clearfix"></div>
+        <hr>
+        <!-- BLOCKQUOTE -->
+        <h3>BLOCKQUOTE</h3>
+        <blockquote class="blockquote clearfix">
+            <p class="text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, velit. Quam officiis deleniti delectus odit.</p>
+            <footer class="blockquote-footer float-end">Quote by<cite title="Dharminder"> Dharminder</cite></footer>
+        </blockquote>
+        <hr>
+        <!-- LIST -->
+        <h3>LIST</h3>
+        <ul class="list-unstyled">
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+        <hr>
+        <!-- INLINE LIST -->
+        <h3>INLINE LIST</h3>
+        <ul class=" list-inline ">
+            <li class="list-inline-item ">list1</li>
+            <li class="list-inline-item ">list2</li>
+            <li class="list-inline-item ">list3</li>
+        </ul>
+        <hr>
+        <!-- CODE -->
+        <h3>CODE</h3>
+        <code>
+            &lt;h1&gt;heading&lt;/h1&gt;
+        </code>
+        <br>
+        <h3>kbd</h3>
+        change directory with <kbd>cd</kbd>
+        <br> to edit setting , press <kbd>ctrl + ,</kbd>
+        <br>
+        <hr>
+        <!-- CONTEXT COLOR -->
+        <h3>CONTEXT COLOR</h3>
+        <P class="text-primary">Hello , World!</P>
+        <P class="text-success">Hello , World!</P>
+        <P class="text-info">Hello , World!</P>
+        <P class="text-warning">Hello , World!</P>
+        <P class="text-danger">Hello , World!</P>
+        <P class="text-muted">Hello , World!</P>
+        <hr>
+        <!-- CONTEXT BACKGROUND COLOR -->
+        <h3>CONTEXT BACKGROUND COLOR</h3>
+        <P class="bg-primary">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="bg-success">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="bg-info">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="bg-dark text-white">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <hr>
+    </div>
+    <div class="container">
+        <!-- BUTTONS -->
+        <h3>BUTTONS</h3>
+        <button class="btn btn-outline-secondary"> Button use button tag </button>
+        <a href="#" class="btn btn-outline-secondary" role="button">Link button use a tag </a>
+        <input type="submit" class="btn btn-outline-secondary" value="Submit button use input tag">
+        <br>
+        <br>
+        <!-- CONTEXTUAL BUTTON -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <br>
+        <br>
+        <!-- OUTLINE BUTTON -->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+        <br>
+        <br>
+        <!-- BUTTON SIZE -->
+        <button type="button" class="btn btn-secondary btn-lg">btn-lg</button>
+        <button type="button" class="btn btn-secondary btn-sm">btn-sm</button>
+        <!--disable button-->
+        <button type="button" class="btn btn-secondary " disabled>Disabled</button>
+        <button type="button" class="btn btn-secondary">Normal</button>
+        <a href="#" class="btn btn-outline-secondary disabled" role="button">Disable a tag button </a>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <div class="container">
+        <!-- CARDS -->
+        <h3>CARDS</h3>
+        <div class="row">
+            <div class="card col" style="width: 18rem;">
+                <img src="./img/img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card col" style="width: 18rem;">
+                <img src="./img/img.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- froms  -->
+    <div class="container">
+        <h3>FORMS</h3>
+        <!-- form group block  -->
+        <form>
+            <div class="form-group">
+                <label for="" class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Email</label>
+                <input type="email" class="form-control " placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Message</label>
+                <textarea class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Gender</label>
+                <select class="form-control">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="" class="form-label">Upload File</label>
+                <input type="file" class="form-control">
+                <p class="help-block">Only JPEG or PNG</p>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" class="form-check-input"> Terms and Condition
+            </div>
+            <br>
+            <div class="form-group">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <br>
+        <hr>
+        <!-- INLINE FORM  -->
+        <h3>INLINE FORM </h3>
+        <form class="row g-3">
+            <div class="col-auto">
+                <input type="Email" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-auto">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+        <hr>
+    </div>
+    <!-- TABLE -->
+    <div class="container mt-3">
+        <h3>TABLE</h3>
+        <table class="table table-striped table-bordered table-hover table-lg table-responsive ">
+            <tr class="table-dark align-middle">
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr class="table-danger">
+                <td>Jone</td>
+                <td>Doe</td>
+                <td>23</td>
+            </tr>
+            <tr class="table-primary">
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>25</td>
+            </tr>
+            <tr class="table-success">
+                <td>Stephin</td>
+                <td>Landon</td>
+                <td>23</td>
+            </tr>
+            <tr class="table-info">
+                <td>Eva</td>
+                <td>Jackson</td>
+                <td>21</td>
+            </tr>
+            <tr class="table-warning">
+                <td>Stive</td>
+                <td>Johnson</td>
+                <td>25</td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+    <!-- LIST GROUP -->
+    <div class="container">
+        <h3>LIST GROUP</h3>
+        <ul class="list-group">
+            <li class="list-group-item">One List</li>
+            <li class="list-group-item">Two List</li>
+            <li class="list-group-item">Three List</li>
+            <li class="list-group-item">Four List</li>
+            <li class="list-group-item">Five List</li>
+            <li class="list-group-item">Six List</li>
+        </ul>
+        <br>
+        <hr>
+        <h3> &lt;a&gt; TAG LIST GROUP</h3>
+        <ul class="list-group">
+            <a href="" class="list-group-item list-group-item-action active">1 List</a>
+            <a href="" class="list-group-item list-group-item-action list-group-item-danger">2 List</a>
+            <a href="" class="list-group-item list-group-item-action list-group-item-primary">3 List</a>
+            <a href="" class="list-group-item list-group-item-action list-group-item-success">4 List</a>
+            <a href="" class="list-group-item list-group-item-action list-group-item-info">5 List</a>
+            <a href="" class="list-group-item list-group-item-action list-group-item-warning">6 List</a>
+        </ul>
+        <br>
+        <hr>
+    </div>
+    <div class="container">
+        <!-- ALERT  -->
+        <h3>ALERT</h3>
+        <div class="alert alert-success" role="alert">Alert 1</div>
+        <div class="alert alert-warning" role="alert">Alert 2</div>
+        <div class="alert alert-danger" role="alert">Alert 3</div>
+        <div class="alert alert-info" role="alert">Alert 4</div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="alert">X Dismiss</button>
+        </div>
+        <hr>
+    </div>
+    <!-- PROGRESS BAR -->
+    <div class="container">
+        <h3>PROGRESS BAR</h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width:70%;">70%</div>
+        </div>
+        <hr>
+    </div>
+    <!-- LABLE & BADGE -->
+    <div class="container">
+        <h3>LABLE & BADGE</h3>
+        <span class="btn alert-default">Default</span>
+        <h1>Hello <span class="badge btn-primary">Primary</span></h1>
+        </span>
+        <span class="btn alert-success">Success</span>
+        <span class="btn alert-info">Info</span>
+        <span class="btn alert-warning">Warning</span>
+        <span class="btn alert-danger">Danger</span>
+        <a href="#" class="">Inbox<span class="badge bg-secondary rounded-pill">&ThinSpace;2&ThinSpace;</span></a>
+        <button class="btn btn-primary position-relative">
+            Message <span class="badge position-absolute top-0 start-100 translate-middle  rounded-pill bg-danger">10+</span>
+        </button>
+        <hr>
+    </div>
+    <!-- IMAGE -->
+    <div class="container">
+        <h3>IMAGE</h3>
+        <img src="./img/img.jpg" class="img-fluid" alt="Responsive Image">
+    </div>
+    <br>
+    <div class="container">
+        <img src="./img/img.jpg" class="img-fluid rounded-circle" alt="">
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

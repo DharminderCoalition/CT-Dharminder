@@ -1,0 +1,80 @@
+body,
+html {
+    font-family: 'lato' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    height: 100%;
+    line-height: 1.8rem;
+    margin: 0;
+}
+
+
+/* images */
+
+.pimg1 {
+    position: relative;
+    background: url('../img/img1.jpg') no-repeat center center/cover;
+    min-height: 100%;
+    background-attachment: fixed;
+    opacity: .9;
+}
+
+.pimg2 {
+    position: relative;
+    background: url('../img/img2.jpg') no-repeat center center/cover;
+    min-height: 400px;
+    background-attachment: fixed;
+    opacity: .9;
+}
+
+.pimg3 {
+    position: relative;
+    background: url('../img/img3.jpg')no-repeat center center/cover;
+    min-height: 400px;
+    background-attachment: fixed;
+    opacity: .9;
+}
+
+
+/* section text  */
+
+section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+
+/* image text  */
+
+.img_text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.img_text .border {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.border.trans {
+    background: transparent;
+}
+
+
+/* media query */
+
+@media (max-width:560px) {
+    .pimg1,
+    .pimg2,
+    .pimg3 {
+        background-attachment: scroll;
+    }
+}

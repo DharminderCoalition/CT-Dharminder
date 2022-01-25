@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discripition" content="">
+    <!-- css stylesheet file -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+
+    <title>Admin Area | Login Page</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">AminStrap</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="./index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page.html">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./post.html">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./user.html">Users</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav   text-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign up</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="header" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1><span><i class="fa-solid fa-user"></i></span> Login <small class="text-muted"> To Website </small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Breadcrum -->
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class=""><a href="/index.html"> Login with your Email & Password</a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- main section -->
+    <section class="container">
+        <div class="card">
+            <div class="card-header text-center main-bg">
+                <h2>Login</h2>
+            </div>
+            <!-- Login form -->
+            <form class="mx-auto mt-5 form">
+                <div class="form-group">
+                    <label for="" class="form-label ">Email</label>
+                    <input type="email" class="form-control " placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="form-group mt-2 mb-2">
+                    <input type="checkbox" class="form-check-input"> Remember Me
+                </div>
+                <div class="form-group mb-2 text-center">
+                    <a href="./index.html" type="submit" class="btn main-bg">Login</a>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer class="mt-4 text-center  bg-dark text-light p-5">
+        <h4>Dharminder.Singh &copy; .2021</h4>
+    </footer>
+
+    <!--Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

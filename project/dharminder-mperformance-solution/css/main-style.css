@@ -1,0 +1,817 @@
+/* font face */
+
+@font-face {
+  font-family: Zefani Stencil;
+  src: url("../font/ZefaniStencil\(uppercase\)-Regular.otf");
+}
+
+@font-face {
+  font-family: Prompt;
+  src: url("../font/Prompt-Light.ttf");
+}
+
+@font-face {
+  font-family: Montserrat SemiBold;
+  src: url("../font/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url("../font/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../font/Montserrat-Medium.ttf");
+}
+
+/* CSS stylesheet for mobile first view  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eae6ea;
+}
+
+/* global */
+
+p {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main header  */
+
+#main-header {
+  width: 100%;
+  display: inline-block;
+}
+
+/* tob bar */
+
+.top-header {
+  height: 35px;
+  background: #1c2b42;
+  display: none;
+  color: #676a69;
+}
+
+.top-header > div {
+  width: 44.99%;
+  height: 35px;
+  background: #2c4368;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-header > div > .email-text > a {
+  font: normal normal 300 14px/42px Prompt;
+  color: #fefaff;
+  margin-right: 60px;
+}
+
+.top-header > div > .social {
+  margin-left: 30px;
+  text-align: left;
+  font: normal normal normal 16px/20px Font Awesome 5 Brands;
+  letter-spacing: 0px;
+  color: #fefaff;
+  opacity: 1;
+}
+
+.top-header > div > .social > span > a {
+  color: #fefaff;
+}
+
+.top-header > div > .social > span {
+  margin-left: 10px;
+}
+
+.top-header > p > a {
+  position: absolute;
+  top: 8px;
+  right: 267px;
+  font: 14px/20px Prompt !important;
+  color: #fefaff;
+}
+
+/* main header container  */
+
+.main-container {
+  width: 100%;
+  height: 70px;
+  display: inline-block;
+}
+
+/* logo styling */
+
+.logo-container {
+  width: 88.33%;
+  height: 70px;
+  background: #1c2b42 0% 0% no-repeat padding-box;
+  clip-path: polygon(0 0, 100% 0%, 88.33% 100%, 0% 100%);
+  opacity: 1;
+  display: inline-block;
+}
+
+.logo-container img {
+  position: relative;
+  width: 55%;
+  height: 72%;
+  display: inline-block;
+  top: 7px;
+  left: 15px;
+}
+
+/* hamburger menu button  */
+
+.menu > a {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  width: 35px;
+  height: 23px;
+  background: transparent url("../img/Mobile-Menu.png") 0% 0% no-repeat
+    padding-box;
+}
+
+/* main nav bar  */
+
+nav {
+  display: none;
+}
+
+nav > ul {
+  position: relative;
+  right: 75px;
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+  font: normal normal 600 13px/22px Montserrat;
+  color: #4d5269;
+
+  margin-left: 30px;
+  transform: translate(97px, -15px);
+}
+
+nav > ul > li > a {
+  color: #4d5269;
+}
+
+nav > ul > li > a:hover {
+  color: #78c2a6;
+  cursor: pointer;
+}
+
+/* show case with heading  */
+
+.show-case {
+  background: transparent url("../img/bg.png") no-repeat center/cover;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 90%;
+  margin: 0px auto;
+}
+.container > .text > h1 {
+  margin-top: 60px;
+  font: normal normal normal 32px/36px Zefani Stencil;
+}
+
+.container > .text > p {
+  font-size: 15px;
+  font-family: Prompt;
+  margin-top: 10px;
+  line-height: 1.5;
+  padding: 5px 22px;
+}
+
+/* images */
+
+.image {
+  width: 93.75%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.image1 > img {
+  width: 100%;
+}
+
+.image2 {
+  margin-top: 30px;
+  height: 450px;
+  background: url("../img/josh-hild--0o-SwEnNt0-unsplash.png") no-repeat center
+    center/cover;
+  z-index: 10;
+  width: 100%;
+}
+
+/* main text  */
+
+.text2 {
+  text-align: center;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.text2 > h2 {
+  margin: 20px 0;
+  font: normal normal bold 24px/29px Montserrat;
+  letter-spacing: 4.8px;
+  color: #4d5269;
+}
+
+.text2 > p {
+  font: normal normal 300 15px/24px Prompt;
+  margin-bottom: 15px;
+  color: #4a5452;
+}
+
+/* .benefit cards  */
+
+ul.benefits {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.benefit {
+  text-align: center;
+  width: 100%;
+}
+
+/* benefit logo or image  */
+
+.rectangle {
+  margin: auto;
+  background-color: #78c2a6;
+  width: 70px;
+  height: 70px;
+}
+
+.rectangle > img {
+  margin-top: 9px;
+  width: 55px;
+  height: 55px;
+}
+
+.benefit > h3 {
+  font: normal normal 600 18px/22px Montserrat SemiBold;
+  line-height: 2.2;
+  color: #4d5269;
+}
+
+.benefit > p {
+  font: normal normal 300 15px/24px Prompt;
+  color: #4a5452;
+}
+
+/* course heading & cards  */
+.course {
+  background: url("../img/OverlayGradient.svg") no-repeat center center/cover;
+  width: 100%;
+  display: inline-block;
+}
+.overlay {
+  background: url("../img/GreenBg_img@2x.png") no-repeat center center/cover;
+  display: inline-block;
+  width: 100%;
+}
+
+.text3 {
+  text-align: center;
+  overflow: hidden;
+}
+
+.text3 > h2 {
+  font: normal normal bold 24px/29px Montserrat;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  padding-top: 60px;
+}
+
+.text3 > p {
+  font: normal normal 300 15px/24px Prompt;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.head > h5 {
+  font: normal normal 10px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #78c2a6;
+  text-transform: uppercase;
+  padding-top: 20px;
+}
+
+.head {
+  background: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.head > p {
+  text-align: center;
+  font: normal normal 600 16px/24px Montserrat;
+  color: #4d5269;
+  opacity: 1;
+}
+
+.head > span {
+  font: normal normal 600 12px/24px Montserrat;
+  color: #4d5269;
+  text-transform: uppercase;
+}
+.head > .plans {
+  display: flex;
+  justify-content: space-evenly;
+  font: normal normal 600 12px/24px Montserrat;
+  color: #4d5269;
+}
+.card > .course_img {
+  display: flex;
+}
+.card > .course_img > img {
+  width: 100%;
+}
+.cards > a > .card > .bg-text > p {
+  font: normal normal 300 15px/25px Prompt;
+  color: #ffffff;
+}
+
+.card {
+  width: 77%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.bg-text {
+  background: rgba(28, 43, 66, 0.815) 0% 0%;
+  padding: 30px 35px;
+  margin-bottom: 30px;
+}
+/* contact button for mobile view  */
+
+.cta-contact {
+  height: auto;
+  background: url("../img/Green_bg.png") no-repeat center center/cover;
+  text-align: center;
+  overflow: hidden;
+  padding: 30px 0px;
+}
+
+.cta-contact > p {
+  width: 80%;
+  font: normal normal bold 18px /26px Montserrat;
+  letter-spacing: 0.45px;
+  color: #ffffff;
+  margin: auto;
+  margin-bottom: 28px;
+}
+
+.cta-contact > a {
+  font: normal normal normal 12px/22px Montserrat;
+  letter-spacing: 1.8px;
+  color: #4d5269;
+}
+
+.cta-contact > .contact-btn {
+  padding: 12px 56px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+/* second contact button for desktop view  */
+.contact_bg {
+  background: url("../img/Green_bg.png") no-repeat center center/cover;
+}
+
+.cta-contact2 {
+  display: none;
+  height: 200px;
+  background: linear-gradient(180deg, #4d526994 0%, #78c2a694 100%);
+  border-bottom: 5px solid #78c2a6;
+}
+
+.cta-contact2 > .bg {
+  background: url("../img/Blue_bg.png") no-repeat right center/cover;
+  height: 200px;
+  width: 70%;
+  float: left;
+  border-bottom: 5px solid #78c2a6;
+}
+
+.cta-contact2 > .bg > p {
+  margin: 55px 206px;
+  font: normal normal 24px /26px Montserrat SemiBold;
+  letter-spacing: 0.6px;
+  color: #78c2a6;
+}
+
+.cta-contact2 > a {
+  color: #4d5269;
+}
+
+/* contact button */
+
+.contact_bg > .cta-contact2 > .contact-btn2 {
+  position: relative;
+  top: 43%;
+  left: 5%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 20px 65px;
+  font-size: 15px;
+  font-family: Montserrat-Medium;
+  clip-path: polygon(11% 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+/* hover effect for contact button  */
+
+.cta-contact2 > .contact-btn2:hover {
+  background: url("../img/Blue_bg.png") no-repeat right center/cover;
+}
+
+/* footer  */
+
+footer {
+  width: 100%;
+  background: #1c2b42;
+  opacity: 1;
+  overflow: hidden;
+  margin-top: -4px;
+}
+
+footer > p {
+  text-align: left;
+  font: normal normal bold 16px/19px Montserrat;
+  letter-spacing: 2.4px;
+  color: #78c2a6;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 60px;
+  padding-left: 40px;
+}
+
+footer > form > input[type="email"] {
+  border: none;
+  width: 75%;
+  height: 45px;
+  padding-left: 15px;
+  text-align: left;
+  font: normal normal 300 15px /26px Prompt;
+  padding-left: 40px;
+}
+
+footer > form {
+  margin-top: 30px;
+  padding-left: 40px;
+}
+
+footer > form > button.send-btn {
+  background: #78c2a6 0% 0% no-repeat padding-box;
+  border: none;
+  width: 25%;
+  height: 45.5px;
+  margin: 0 0 0 -41px;
+  transform: translatey(0px);
+  padding: 16px;
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+footer > form > .send-btn > p {
+  display: none;
+  text-align: center;
+  font: 12px/22px Montserrat-Medium;
+  letter-spacing: 2.25px;
+  color: #ffffff;
+  transform: translateY(-8px);
+}
+
+/* footer links */
+
+footer > ul {
+  list-style: none;
+  font: normal normal 300 15px /36px Prompt;
+  padding-left: 40px;
+}
+
+footer > ul > li > a {
+  color: #ffffff;
+}
+
+footer > ul > .solution {
+  margin-top: 60px !important;
+  margin-bottom: 25px;
+}
+
+footer > ul > li > a > span {
+  float: right;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+footer > ul > li:nth-child(1) > a {
+  text-align: left;
+  font: normal normal bold 16px/19px Montserrat;
+  letter-spacing: 2.4px;
+  color: #78c2a6;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 30px;
+}
+
+/* for footer link responsive  */
+
+footer > .row2 > li {
+  display: none;
+}
+
+footer > .row2 > li:nth-child(1) {
+  display: block;
+}
+
+footer > .row3 > li:nth-child(1) {
+  display: block;
+}
+
+footer > .row3 > li {
+  display: none;
+}
+
+/* footer logo  */
+
+footer > a > .dark_logo {
+  margin-top: 10px;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+/* footer email text  */
+
+footer > .envelope > a {
+  text-align: left;
+  font: normal normal 300 15px/42px Prompt;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-left: 9.33px;
+  padding-left: 40px;
+}
+
+/* social links */
+
+footer > .social {
+  text-align: left;
+  font: normal normal normal 23px /30px Font Awesome;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding-left: 40px;
+}
+
+footer > .social > span > a {
+  color: #ffffff !important;
+}
+
+footer > .social > span {
+  margin-right: 12px;
+}
+
+/* copyrigth text  */
+
+.mainfooter {
+  width: 100%;
+  background: #1c2b42 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+}
+
+.mainfooter > .copywriter {
+  text-align: left;
+  font: normal normal 300 13px/42px Prompt;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* media queary for desktop view  */
+
+@media (min-width: 1000px) {
+  .top-header {
+    display: block;
+    border: none;
+  }
+  .main-container,
+  .logo-container {
+    height: 100px;
+  }
+  .container > .text > h1 {
+    font: normal normal normal 60px/110px Zefani stencil;
+  }
+  .container > .text > p {
+    padding: 5px 264px;
+    font: normal normal 300 16px/26px Prompt;
+  }
+  .logo-container {
+    width: 42.83%;
+  }
+  .logo-container img {
+    left: 170px;
+  }
+  nav {
+    display: inline-block;
+    width: 56%;
+  }
+  .menu {
+    display: none;
+  }
+  .image {
+    width: 30%;
+    float: left;
+    margin: 120px 80px 60px 170px;
+  }
+  .text2 {
+    margin: 87px 0px 0 1px;
+    padding: 0px 106px 0 0;
+  }
+  .text2 > h2 {
+    text-align: left;
+    font: normal normal bold 32px/39px Montserrat;
+  }
+  .text2 > p {
+    text-align: left;
+    font: normal normal 300 16px/26px Prompt;
+    letter-spacing: 1px;
+    color: #4a5452;
+    opacity: 1;
+  }
+  ul.benefits {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 120px;
+    grid-gap: 11px;
+  }
+  .benefits > .benefit {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    align-items: center;
+    text-align: start;
+  }
+  .benefits > .benefit > .rectangle {
+    grid-row: 1/3;
+    text-align: center !important;
+  }
+  .benefits > .benefit > h3 {
+    grid-column: 2/4;
+    display: inline-block;
+    padding-top: 25px;
+    transform: translate(8px, -4px);
+    font: normal normal 600 18px/26px Montserrat SemiBold;
+  }
+  .benefits > .benefit > p {
+    grid-column: 2/4;
+    padding-bottom: 25px;
+    transform: translate(3px, -16px);
+  }
+  .text3 > h2 {
+    font: normal normal bold 32px /39px Montserrat;
+    letter-spacing: 4.8px;
+    color: #ffffff;
+  }
+  .text3 > p {
+    font: normal normal 300 18px /27px Prompt;
+    color: #ffffff;
+    padding: 0 120px;
+  }
+  /*course cards  */
+  .overlay {
+    padding-bottom: 50px;
+  }
+  .cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    margin: 50px auto;
+  }
+  a > .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.7fr 1.3fr;
+    height: 100%;
+    width: 100%;
+  }
+  .head {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .bg-text {
+    grid-row: 1/3;
+    margin-bottom: 0px !important;
+  }
+  .card1 {
+    grid-column: 1/2;
+  }
+  /* card hover  */
+  .card:hover {
+    transform: scale(1.005);
+    box-shadow: 4px 3px 8px 2px #4d5269;
+  }
+  /* contact */
+  .cta-contact {
+    display: none;
+  }
+  .cta-contact2 {
+    display: inherit;
+  }
+  /* responsive footer  */
+  footer {
+    padding: 78px 134px 0 134px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 600px !important;
+    display: grid;
+  }
+  footer > ul > li > span {
+    display: none;
+  }
+  footer > p {
+    font: normal normal bold 16px/19px Montserrat;
+    margin-top: 32px;
+    margin-right: 29px;
+  }
+  footer > form {
+    grid-column: 2/4;
+  }
+  footer > ul > .solution {
+    margin-top: 0px !important;
+    margin-bottom: 0;
+  }
+  .row2 {
+    grid-column: 2/3;
+  }
+  .row3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .envelope {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 20px;
+  }
+  footer > .social {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-top: 20px;
+  }
+  footer > a > .dark_logo {
+    margin-top: 0px;
+  }
+  footer > .row2 > li {
+    display: block;
+  }
+  footer > .row3 > li {
+    display: block;
+  }
+  footer > ul > li > a > span {
+    display: none;
+  }
+  footer > form > .send-btn > img {
+    display: none;
+  }
+  footer > form > .send-btn > p {
+    display: block;
+  }
+  footer > form > .send-btn {
+    transform: translatey(7px) !important;
+    height: 46.5px !important;
+    margin-left: -100px !important;
+  }
+}

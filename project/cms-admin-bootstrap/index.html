@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discripition" content="">
+    <!-- css stylesheet file -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <!-- page title -->
+    <title>Admin Area | Dashboard</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">AminStrap</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="./index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page.html">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./post.html">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./user.html">Users</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav   text-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Welcome | Dharminder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./logout.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header id="header" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1><span><i class="fa-solid fa-gear"></i></span> Dashboard <small class="text-muted">Manage Your Site</small></h1>
+                </div>
+                <div class="col-md-2 text-center mt-1">
+                    <div class="btn-group  create">
+                        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Create Content</button>
+                        <ul class="dropdown-menu">
+                            <li><a type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#addPage">Add Page</a></li>
+                            <li><a class="dropdown-item" href="#">Add Post</a></li>
+                            <li><a class="dropdown-item" href="#">Add User</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Breadcrum -->
+
+    <section id="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class=""><a href="./index.html"> Dashboard</a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- main section -->
+    <Section id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="./index.html" class="list-group-item list-group-item-action main-bg" aria-current="true">
+                            <span><i class="fa-solid fa-gear"></i></span> Dashboard
+                        </a>
+                        <a href="./page.html" class="list-group-item list-group-item-action"> <span><i class="fa-regular fa-file"></i> </span> Add Pages <span class="badge bg-dark float-end rounded-pill">9</span></a>
+                        <a href="./post.html" class="list-group-item list-group-item-action"><span><i class="fa-regular fa-pen-to-square"></i></span> Add Post <span class="badge bg-dark float-end rounded-pill">10+</span></a>
+                        <a href="./user.html" class="list-group-item list-group-item-action"><span><i class="fa-solid fa-user"></i></span> Add User <span class="badge bg-dark float-end rounded-pill">4</span></a>
+                    </div>
+                    <div class="card p-3 mt-3">
+                        <h5>Bandwidth Used</h5>
+                        <div class="progress mb-3">
+                            <div class="progress-bar main-bg progress-bar-striped progress-bar-animated" style="width: 45%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">45%</div>
+                        </div>
+                        <h5>Disk Space Used</h5>
+                        <div class="progress ">
+                            <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 75%" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header main-bg text-center ">
+                            <h2>WebSite Overview</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card p-3 text-center dash-box">
+                                        <h2 class="mb-3 mt-3"><span><i class="fa-solid fa-user"></i></span> 51</h2>
+                                        <h4 class="mb-3">User</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card p-3 text-center">
+                                        <h2 class="mb-3 mt-3"><span><i class="fa-regular fa-file"></i></span> 30</h2>
+                                        <h4 class="mb-3">Pages</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card p-3 text-center">
+                                        <h2 class="mb-3 mt-3"><span><i class="fa-regular fa-pen-to-square"></i></span> 200</h2>
+                                        <h4 class="mb-3">Post</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card p-3 text-center">
+                                        <h2 class="mb-3 mt-3"><span><i class="fa-solid fa-users"></i></span> 1,345</h2>
+                                        <h4 class="mb-3">Vistors</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4 mb-4">
+                        <div class="card-header">
+                            <h2>Latest Vistors</h2>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-lg table-striped table-hover">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Joined</th>
+                                </tr>
+                                <tr>
+                                    <td>Jhon</td>
+                                    <td>jhon.doe@gamil.com</td>
+                                    <td>28/10/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Stive</td>
+                                    <td>stive.michle@yahoo.com</td>
+                                    <td>28/10/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Roman</td>
+                                    <td>Roman456@gamil.com</td>
+                                    <td>27/10/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Maxwell</td>
+                                    <td>maxwell23453@gamil.com</td>
+                                    <td>26/10/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Harry</td>
+                                    <td>Harry.smith@harry.com</td>
+                                    <td>26/10/2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Mike</td>
+                                    <td>mike56@gamil.com</td>
+                                    <td>24/10/2021</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <footer class="mt-4 text-center  bg-dark text-light p-5">
+        <h4>Dharminder.Singh &copy; .2021</h4>
+    </footer>
+    <!-- Modals -->
+
+    <!-- Add Page -->
+    <div class="container">
+        <div class="modal fade" id="addPage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add Page</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="row g-3">
+                                <div class="col-md">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="# Main St">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">State</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Country</option>
+                                            <option>Canada</option>
+                                            <option>England</option>
+                                            <option>India</option>
+                                            <option>Finland</option>
+                                            <option>Newzland</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Discription</label>
+                                    <textarea name="editor1" type="text" class="form-control" id="inputAddress" placeholder="# Main St"></textarea>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">Check me out</label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        CKEDITOR.replace('editor1');
+    </script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

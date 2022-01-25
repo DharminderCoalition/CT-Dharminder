@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 17px Verdana, Geneva, Tahoma, sans-serif;
+    color: #926239;
+    line-height: 1.6;
+}
+
+
+/* main show case */
+
+#show-case {
+    background: url('../img/show-case.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+#show-case h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+#show-case p {
+    font-size: 20px;
+}
+
+
+/* button */
+
+#show-case .btn {
+    font-size: 18px;
+    text-decoration: none;
+    color: #926239;
+    border: 1px solid #926239;
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+#show-case .btn:hover {
+    color: #fff;
+    background: #926239;
+}
+
+
+/* sections */
+
+.section_1 {
+    background: #926239;
+    padding: 20px;
+    color: #fff;
+}
+
+.section_2 {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.section_3 {
+    display: flex;
+}
+
+.section_3 .box1 {
+    background: #926239;
+    color: #fff;
+    padding: 10px;
+}
+
+.section_3 .box2 {
+    padding: 10px;
+    ;
+}
+
+.section_3 .box3 {
+    background: #926239;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* no footer in html */

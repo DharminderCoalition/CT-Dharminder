@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('../img/page-bg.png') no-repeat center center/cover;
+}
+
+.animation {
+    background: url('../img/text-bg.png') no-repeat;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: moveBg 90s linear infinite;
+    -webkit-animation: moveBg 90s linear infinite;
+}
+
+
+/* text animation  */
+
+@keyframes moveBg {
+    0% {
+        background-position: 0% 30%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
