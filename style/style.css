@@ -18,17 +18,17 @@ header .container{
 }
 header h1{
     color: #2966af;
-    font-size: 50px;
+    font-size: 40px;
     margin: 15px 0 5px 0 ;
 }
 header h2{
     color: #4585af;
-    font-size: 28px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 header p{
     color: #a7a5a5;
-    font-size: 30px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 ul li{
@@ -37,9 +37,9 @@ ul li{
     display: inline-block;
     width: 30%;
     text-align: center;
-    margin: 22px 21px;
+    margin: 22px 15px;
     padding: 23px;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
     transition: all .3s ease-in;
 }
